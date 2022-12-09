@@ -41,6 +41,8 @@ public class StudentDB {
 		stmt = conn.createStatement();
 		int result = stmt.executeUpdate("delete from student where name = '" + name + "'");
 		System.out.printf("%s의 자료를 %d건 삭제", name, result);
+
+
 	}
 	
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
